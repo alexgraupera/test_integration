@@ -24,6 +24,8 @@ select = [
     "RUF006", # Store a reference to the return value of asyncio.create_task
     "UP",  # pyupgrade
     "W",  # pycodestyle
+    "UP006", # Non PEP585 annotations
+    "UP007", # Non PEP604 annotations
 ]
 
 ignore = [
@@ -40,9 +42,6 @@ ignore = [
 
 [flake8-pytest-style]
 fixture-parentheses = false
-
-[pyupgrade]
-keep-runtime-typing = true
 
 [mccabe]
 max-complexity = 25
